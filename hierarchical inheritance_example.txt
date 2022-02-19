@@ -1,0 +1,48 @@
+class Digital{
+    void power(){
+        System.out.println("power consumtion very low");
+    }
+    void memory(int x){
+        System.out.println("Available memory is"+x+" Gb");
+    }
+}
+class Laptop extends Digital{
+    void screensize(int w,int h){
+        System.out.println(" Laptop height is :"+" "+h+" "+"laptop width is :"+" "+w);
+    }
+    void displayquality(String s){
+        System.out.println("Laptop Display quality"+ s);
+    }
+}
+class Ipad extends Digital{
+    void color(String c){
+        System.out.println("IPAD Color is"+c);
+    }
+    void model(String s){
+        System.out.println("Ipad Model is"+s);
+    }
+}
+class Chromebook extends Digital{
+    void noofkeys(int x){
+        System.out.println("No_of_keys available in chromebook"+x);
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Laptop l=new Laptop();
+        Ipad i=new Ipad();
+        Chromebook c=new Chromebook();
+        l.power();
+        l.memory(4);
+        l.screensize(2,3);
+        l.displayquality("Good");
+        i.power();
+        i.memory(5);
+        i.color("Red");
+        i.model("Un31");
+        c.power();
+        c.memory(6);
+        c.noofkeys(32);
+        
+    }
+}

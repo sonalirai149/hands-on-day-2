@@ -1,0 +1,43 @@
+class Vehical{
+    void price(int x){
+        System.out.println("price is"+" " +x);
+    }
+    void mileage(){
+        System.out.println("mileage is very good");
+    }
+    void sound(){
+        System.out.println("sounds moderate");
+    }
+}
+class Car extends Vehical{
+    
+    void model(int x){
+        System.out.println("model is" +x);
+    }
+    void color(String c){
+        System.out.println("color is"+ " "+ c);
+    }
+}
+class Honda extends Car{
+    void cctype(int t){
+        System.out.println("cctype is"+ " "+t);
+    }
+}
+class Hondacity extends Honda{
+    void features(String s1,String s2,String s3){
+        System.out.println("Features are :"+ " " +s1+" "+s2+" "+s3);
+    }
+}
+public class Myclass{
+    public static void main(String[] args){
+        Hondacity h=new Hondacity();
+        
+        h.price(455600);
+        h.mileage();
+        h.sound();
+        h.model(55);
+        h.color("black");
+        h.cctype(37);
+        h.features("color","mileage","speed");
+    }
+}

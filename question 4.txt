@@ -1,0 +1,29 @@
+class Calculator{
+    void subtraction(int a,int b){
+        int sub=a-b;
+        System.out.println("Subtraction is : "+sub);
+    }
+    void subtraction(int a,int b,int c){
+        int sub=a-b-c;
+        System.out.println("Subtraction is : "+sub);
+    }
+    void addition(int a,int b){
+        int add=a+b;
+        System.out.println("Addition is : "+add);
+    }
+    void addition(int a,int b,int c){
+        int add=a+b+c;
+        System.out.println("Addition is : "+add);
+    }
+    
+}
+public class Main{
+    public static void main(String[] args){
+        Calculator c=new Calculator();
+        c.subtraction(6,5);
+        c.subtraction(6,5,1);
+        c.addition(5,6);
+        c.addition(5,6,7);
+        
+    }
+}

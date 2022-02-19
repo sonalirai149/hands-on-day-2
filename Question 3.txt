@@ -1,0 +1,36 @@
+class Rectangle{
+    int breadth,length;
+    public void Rectangle(){
+        length=12;
+        breadth=6;
+    }
+    void printArea(int length,int breadth){
+        this.breadth=breadth;
+        this.length=length;
+        int area=length*breadth;
+        System.out.println("Area is: "+area);
+    }
+    void printparameter(int length,int breadth){
+        this.breadth=breadth;
+        this.length=length;
+        int p=2*length+2*breadth;
+        System.out.println(" Parameter is: "+p);
+        
+    }
+}
+class Square extends Rectangle{
+    void Square(){
+        
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Square s=new Square();
+        Rectangle r=new Rectangle();
+        s.printArea(12,6);
+        s.printparameter(12,6);
+        r.printArea(2,6);
+        r.printparameter(6,7);
+        
+    }
+}

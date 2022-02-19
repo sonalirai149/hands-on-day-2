@@ -1,0 +1,30 @@
+class Member{
+    String name="ram"; String address="varanasi"; int age=24; int salary=40000; int phoneno=56789;
+    void printSalary(int salary){
+        this.salary=salary;
+        System.out.println("Salary is"+salary);
+        
+    }
+}
+class Employee extends Member{
+    String specilization="Development";
+}
+class Manager extends Member{
+    String department="IT";
+}
+public class Main{
+    public static void main(String[] args){
+        Employee n=new Employee();
+        Manager m=new Manager();
+        System.out.println("Manager Name is"+ " "+m.name);
+        System.out.println("Manager age is"+" " +m.age);
+        System.out.println("Manager address is"+" "+m.address);
+        System.out.println("Manager salary is"+" "+m.salary);
+        System.out.println("Managerr department is"+" "+m.department);
+        m.printSalary(60000);
+        System.out.println("Employee Name is"+" "+n.name);
+        System.out.println("Employee age is"+" "+n.age);
+        System.out.println("Employee addtress is"+" "+n.address);
+        System.out.println("Employee salary is"+" "+n.salary);
+        System.out.println("Employee age specilization is"+" "+n.specilization);
+        n.printSalary(80000);

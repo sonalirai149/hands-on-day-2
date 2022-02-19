@@ -1,0 +1,33 @@
+class Protein{
+    Protein(){
+        System.out.println("protein is neccessary for health");
+    }
+    Protein(String s){
+        System.out.println(s+" "+"contain protein which is good for health");
+    }
+    Protein(String s1,String s2,String s3){
+        System.out.println(s1+" "+s2+" "+"and"+" "+s3 +" "+"are good sources of protein");
+    }
+    
+}
+class Source extends Protein{
+    String milk,egg,nuts;
+    Source(){
+        super();
+    }
+    Source(String milk){
+        super(milk);
+    }
+    Source(String egg,String nuts,String milk){
+        super(egg,nuts,milk);
+    }
+}
+
+ public class Myprotein{
+
+     public static void main(String []args){
+        Source s=new Source();
+        Source s1=new Source("egg");
+        Source s3=new Source("egg","nuts","milk");
+     }
+}
